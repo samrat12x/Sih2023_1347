@@ -1,0 +1,54 @@
+/* VerticalNavbar.css */
+
+.vertical-navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    width: 200px;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  li.active {
+    background-color: #555;
+  }
+  
+  li:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  button.active {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  

@@ -26,13 +26,13 @@ export  function CarouselLanding(props) {
     draggable={true}
     showDots={false}
     responsive={responsive}
-    ssr={true} // means to render carousel on server-side.
+    ssr={false} // means to render carousel on server-side.
     infinite={true}
-    //autoPlay={this.props.deviceType !== "mobile" ? true : false}
-    autoPlaySpeed={1000}
+    autoPlay={true}
+    autoPlaySpeed={3000}
     keyBoardControl={true}
-    customTransition="all .5"
-    transitionDuration={1000}
+    customTransition="transform 300ms ease-in-out"
+    transitionDuration={400}
     containerClass="carousel-container"
    // removeArrowOnDeviceType={["tablet", "mobile"]}
 //    deviceType={this.props.deviceType}
@@ -67,6 +67,65 @@ It has anti-inflammatory effects</p>
 This plant may help to positively alter the gut microbiome</p>
     </div>
   
+
+
+
+    <div className='carousel-item'> 
+        <img className='carousel-img' src="src\assets\image 10.png" alt="" />
+    
+       <p>
+       <b>Ashwagandha</b>
+       <br />
+
+      It is believed to help your body manage stress more effectively.
+       </p>
+    </div>
+    <div className='carousel-item'> 
+        <img className='carousel-img' src="src\assets\image 11.png" alt="" />
+    
+       <p>
+       <b>Brahmi</b>
+       <br />
+
+      It may help improve your body's ability to deal with stress and anxiety.
+       </p>
+    </div>
+    <div className='carousel-item'> 
+        <img className='carousel-img' src="src\assets\image 13.png" alt="" />
+    
+       <p>
+       <b>Turmeric</b>
+       <br />
+
+      People often use it in curry recipes . it may have an anti-inflimatory and anti-oxidative effect.
+       </p>
+    </div>
+    <div className='carousel-item'> 
+        <img className='carousel-img' src="src\assets\image 14.png" alt="" />
+    
+       <p>
+       <b>Neem</b>
+       <br />
+
+      It is an antiOxidant and helps with several of the body's functions.
+       </p>
+    </div>
+    <div className='carousel-item'> 
+        <img className='carousel-img' src="src\assets\image 18.png" alt="" />
+    
+       <p>
+       <b>Gotu Kola</b>
+       <br />
+
+      It adds no aroma or flavor to food , but studies indicate that it may help improve memory.
+       </p>
+    </div>
+
+
+
+
+
+
    
   </Carousel></div>
   )
