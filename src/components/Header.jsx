@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-
+import '../App.css'
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 

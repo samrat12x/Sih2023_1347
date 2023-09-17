@@ -1,5 +1,5 @@
 import * as React from "react";
-import '../App.css'
+import './svgcomponent.css'
 const SVGComponent = (props) => (
   <svg
     id="body-model-adult-male-front"
