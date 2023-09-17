@@ -1,6 +1,7 @@
 import React from 'react'
 import Searchbar from './Searchbar'
 import SVGComponent from './SVGComponent'
+import { Link } from 'react-router-dom'
 
 export default function  Symptoms() {
   return (
@@ -10,6 +11,7 @@ export default function  Symptoms() {
 most accurate results.</h3>
 <Searchbar/>        
 <SVGComponent/>
+<Link to="/PatientDashboard/" preventScrollReset={true}> Back</Link>
     </div>
   )
 }

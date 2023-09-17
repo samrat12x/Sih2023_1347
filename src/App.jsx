@@ -8,6 +8,7 @@ import {Form} from './components/Form/Form'
 import {VerticalNavbar} from './components/VerticalNavbar/VerticalNavbar'
 import Searchbar from './components/SymptomsPage/Searchbar'
 import Symptoms from './components/SymptomsPage/Symptoms'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,11 +16,9 @@ function App() {
   return (
     <>
     <Header/>
-    <Landingpage/>
-    {/* <SVGComponent/> */}
-    {/* <Form/> */}
-    {/* <VerticalNavbar/> */}
-    <Symptoms/>
+
+    <Outlet/>
+    
     <Footer/>
 
     

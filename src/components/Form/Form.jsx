@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Form.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
 
 export function Form() {
   const [formData, setFormData] = useState({
@@ -92,6 +93,9 @@ export function Form() {
           <button type="submit">Submit</button>
         </div>
       </form>
+
+
+      <Link to="/PatientDashboard/Symptoms" preventScrollReset={true}> Next</Link>      
     </div>
   );
 }

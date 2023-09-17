@@ -1,6 +1,9 @@
 
 import React, { useState } from 'react';
 import '../App.css'
+import { Link } from 'react-router-dom';
+
+
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -12,8 +15,13 @@ const Header = () => {
     <header className="header p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
+         
+          
           <img src="src\assets\logo (2).png" alt="Company Logo" className="w-10 h-10" />
-          <h1 className="text-white text-xl ml-2">Prabha Veda</h1>
+          
+          
+          <Link to="">  <h1 className="text-white text-xl ml-2">Prabha Veda</h1>
+          </Link>
         </div>
         <div className="md:hidden">
           <button className={`text-white focus:outline-none ${isNavOpen ? 'text-blue-300' : ''}`} onClick={toggleNav}>
