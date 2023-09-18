@@ -36,4 +36,6 @@
   .search-inner {
     display: flex;
   }
-  
+  .search-input{
+    border: 1px solid #000;
+  }

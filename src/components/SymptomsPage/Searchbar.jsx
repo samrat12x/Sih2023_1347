@@ -80,7 +80,7 @@ const onChange = (event) => {
 
       <div className="search-container">
         <div className="search-inner">
-          <input type="text" value={value} onChange={onChange} />
+          <input className='search-input' type="text" value={value} onChange={onChange} />
           <button onClick={() => onSearch(value)}> ADD </button>
         </div>
         <div className="dropdown">

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import '../App.css'
 import { Link } from 'react-router-dom';
-
+import logo from '../assets/logo (2).png'
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -17,7 +17,7 @@ const Header = () => {
         <div className="flex items-center">
          
           
-          <img src="src\assets\logo (2).png" alt="Company Logo" className="w-10 h-10" />
+          <img src={logo} alt="Company Logo" className="w-10 h-10" />
           
           
           <Link to="">  <h1 className="text-white text-xl ml-2">Prabha Veda</h1>
