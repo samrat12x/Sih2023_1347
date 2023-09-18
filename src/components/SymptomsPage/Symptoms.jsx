@@ -4,6 +4,11 @@ import SVGComponent from './SVGComponent'
 import { Link } from 'react-router-dom'
 import './Symptoms.css'
 export default function  Symptoms() {
+  
+  const ApiCall=()=>{
+    console.log("write api call logic here");
+  }
+  
   return (
     <div>
       <div className='symptom-page' >
@@ -16,6 +21,14 @@ most accurate results.</h3>
 <SVGComponent/>
 </div>
 <Link to="/PatientDashboard/" preventScrollReset={true}> Back</Link>
+
+
+<Link to="/PatientDashboard/Result" preventScrollReset={true}>
+   <button onClick={ApiCall} >
+
+   Submit
+   </button>
+   </Link>
     </div>
   )
 }

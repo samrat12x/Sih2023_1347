@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Result() {
   return (
-    <div>Result</div>
+    <div>I am the Result</div>
   )
 }

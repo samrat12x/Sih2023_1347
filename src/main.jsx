@@ -9,6 +9,7 @@ import PatientDashboard from './components/PatientDashboard.jsx';
 import Form from './components/Form/Form.jsx';
 import Symptoms from './components/SymptomsPage/Symptoms.jsx';
 import Preloader from './components/Preloader/Preloader.jsx';
+import Result from './components/Result/Result.jsx';
 
 // Create your router configuration
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
           {
             path: "/PatientDashboard/Symptoms",
             element: <Symptoms />
+          },
+          {
+            path: "/PatientDashboard/Result",
+            element: <Result />
           }
         ]
       }
