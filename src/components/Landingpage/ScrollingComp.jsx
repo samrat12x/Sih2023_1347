@@ -3,7 +3,7 @@ import './ScrollingComp.css'
 import { Link } from 'react-router-dom';
 
 export function ScrollDiv() {
-  const [showDiv, setShowDiv] = useState(window.screen.width <= 450);
+  const [showDiv, setShowDiv] = useState(window.screen.width<450);
 
   useEffect(() => {
     // Define a function to handle scroll events
@@ -36,9 +36,11 @@ export function ScrollDiv() {
    
    <div className="scroll-div">
  <p>"Unlock your health potential with our Ayurveda-based diagnostic product—ancient wisdom meets modern precision for personalized well-being."</p>
+ <Link to="/PatientDashboard" preventScrollReset={true}> 
  <div className="button-29">
-   <Link to="/PatientDashboard" preventScrollReset={true}> Visit Portal</Link> 
+   Visit Portal
    </div>
+   </Link> 
         </div>
       )}
 
