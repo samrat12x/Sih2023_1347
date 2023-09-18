@@ -46,7 +46,7 @@ function Main() {
     // Simulate a delay or async data fetching
     setTimeout(() => {
       setIsLoading(false);
-    }, 3500); // Replace this with your actual loading logic
+    }, 3800); // Replace this with your actual loading logic
   }, []);
 
   return (

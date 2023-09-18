@@ -20,7 +20,7 @@ const Header = () => {
           <img src={logo} alt="Company Logo" className="w-10 h-10" />
           
           
-          <Link to="">  <h1 className="text-white text-xl ml-2">Prabha Veda</h1>
+          <Link to="">  <h1 className="text-white text-xl ml-2">AyurVita</h1>
           </Link>
         </div>
         <div className="md:hidden">

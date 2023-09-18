@@ -21,7 +21,20 @@ const responsive = {
   };
 export  function CarouselLanding(props) {
   return (
-    <div className='carousel-container'><Carousel
+    <div className='carousel-container'>
+      <h1  
+      style={{fontSize:'40px' , 
+      color:'white',
+      textAlign:'center', 
+      fontFamily:'revert-layer',
+      fontWeight:'bold',
+      textDecoration: 'underline  dotted',
+      padding:'3%'
+
+     
+      }}>Learn more</h1>
+     
+      <Carousel
     swipeable={true}
     draggable={true}
     showDots={false}
