@@ -1,7 +1,7 @@
 import React from 'react'
-
+import './result.css'
 export default function Result() {
   return (
-    <div>I am the Result</div>
+    <div className='result'>I am the Result</div>
   )
 }

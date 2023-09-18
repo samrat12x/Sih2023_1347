@@ -24,7 +24,7 @@ export function Form() {
 
   return (
     <div className="form-container">
-      <h2>Form</h2>
+      <b><h2>Form</h2></b>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label className="label" htmlFor="name">
@@ -82,6 +82,7 @@ export function Form() {
                 type="radio"
                 name="gender"
                 value="other"
+                className='radio-input-circle'
                 checked={formData.gender === 'other'}
                 onChange={handleChange}
               />
@@ -95,7 +96,7 @@ export function Form() {
       </form>
 
 
-      <Link to="/PatientDashboard/Symptoms" preventScrollReset={true}> Next</Link>      
+      <Link to="/PatientDashboard/Symptoms" preventScrollReset={true}> <button className='btn'>Submit</button></Link>      
     </div>
   );
 }

@@ -10,25 +10,32 @@ export default function  Symptoms() {
   }
   
   return (
-    <div>
+    <div className='symptom-fullPage'>
       <div className='symptom-page' >
-      <div>
+      <div className='inner-sym'>
 <h1>Add your symptoms</h1>
-<h3>Add as many symptoms you can to obtain
+<h3 style={{marginTop:'10px', marginBottom:'10px', fontWeight:'600'}}>Add as many symptoms you can to obtain
 most accurate results.</h3>
 <Searchbar/>
 </div>        
 <SVGComponent/>
 </div>
-<Link to="/PatientDashboard/" preventScrollReset={true}> Back</Link>
+
+<div className='btn-grp'>
+<Link to="/PatientDashboard/" preventScrollReset={true}> 
+<button className='btn btn-back'  >
+
+Back
+</button></Link>
 
 
 <Link to="/PatientDashboard/Result" preventScrollReset={true}>
-   <button onClick={ApiCall} >
+   <button className='btn' onClick={ApiCall} >
 
    Submit
    </button>
    </Link>
+   </div>
     </div>
   )
 }

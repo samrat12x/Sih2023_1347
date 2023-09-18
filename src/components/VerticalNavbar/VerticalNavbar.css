@@ -3,11 +3,22 @@
 .vertical-navbar {
     display: flex;
     flex-direction: column;
-    background-color: #333;
+    background-color: #717938;
     color: white;
     width: 200px;
     padding: 20px;
+    height: 100%;
+    position: absolute;
+    left:0;
+    border-width: 1px;
+    border-color: black;
+    
   }
+  @media screen and (max-width:930px) {
+    .vertical-navbar {
+     
+position:static;
+    }}
   
   ul {
     list-style-type: none;

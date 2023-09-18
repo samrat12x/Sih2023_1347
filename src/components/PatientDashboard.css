@@ -1,5 +1,7 @@
 .PatientDashboard{
 display: flex;
-
-
+justify-content:center;
+flex-wrap: wrap;
+position: relative;
+background-color: bisque;
 }

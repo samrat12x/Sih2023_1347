@@ -1,4 +1,5 @@
 import { useState ,useEffect} from "react";
+import {AiFillDelete  } from 'react-icons/ai';
 import "./Searchbar.css";
 import data from './MockdataV2.json';
 
@@ -96,7 +97,7 @@ const onChange = (event) => {
                 fullName !== searchTerm
               );
             })
-            .slice(0, 10)
+            .slice(0, 5)
             .map((item) => (
               <div
                 onClick={() => onSelectingListItem(item.symptoms)}
@@ -116,7 +117,7 @@ const onChange = (event) => {
           {Object.entries(symptomListObj).map(([searchTerm, item], index) => (
             <li key={index}>
               {item.symptom}
-              <button onClick={() => removeSymptom(searchTerm)}>Remove Symptom</button>
+              <button className="Remove-btn" onClick={() => removeSymptom(searchTerm)}><AiFillDelete/></button>
             </li>
           ))}
         </ul>
