@@ -20,7 +20,7 @@ const Header = () => {
           <img src={logo} alt="Company Logo" className="w-10 h-10" style={{borderRadius:'50%'}}/>
           
           
-          <Link to="">  <h1 className="text-white text-xl ml-2">AyurCare</h1>
+          <Link to="">  <h1 className="text-white text-xl ml-2">AyurCure</h1>
           </Link>
         </div>
         <div className="md:hidden">
@@ -35,10 +35,15 @@ const Header = () => {
           </button>
         </div>
         <nav className={`md:flex md:items-center space-x-4 ${isNavOpen ? 'block' : 'hidden'}`}>
-          <a href="/" className="text-white">Home</a>
-          <a href="/about" className="text-white">About</a>
-          <a href="/services" className="text-white">Services</a>
-          <a href="/contact" className="text-white">Contact</a>
+          {/* <div="/" className="text-white">Home</a>
+          <div="/about" className="text-white">About</a>
+          <div="/services" className="text-white">Services</a>
+          <div="/contact" className="text-white">Contact</a> */}
+          <div className="text-white">Home</div>
+          <div className="text-white">About</div>
+          <div  className="text-white">Services</div>
+          <div className="text-white">Contact</div> 
+
         </nav>
       </div>
     </header>

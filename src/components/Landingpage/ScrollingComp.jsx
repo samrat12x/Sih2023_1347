@@ -3,7 +3,7 @@ import './ScrollingComp.css'
 import { Link } from 'react-router-dom';
 
 export function ScrollDiv() {
-  const [showDiv, setShowDiv] = useState(window.screen.width<450);
+  const [showDiv, setShowDiv] = useState(window.screen.width<550);
 
   useEffect(() => {
     // Define a function to handle scroll events
@@ -12,7 +12,7 @@ export function ScrollDiv() {
 
 
 
-      if ((window.scrollY > 0.1*(window.screen.height))) {
+      if ((window.scrollY > 0.05*(window.screen.height))) {
         setShowDiv(true);
       } 
    else   {
@@ -33,7 +33,7 @@ export function ScrollDiv() {
     <div className='ScrollDiv'>
       
       {showDiv && (
-   
+   <>
    <div className="scroll-div">
  <p>"Unlock your health potential with our Ayurveda-based diagnostic product—ancient wisdom meets modern precision for personalized well-being."</p>
  <Link to="/PatientDashboard" preventScrollReset={true}> 
@@ -42,6 +42,13 @@ export function ScrollDiv() {
    </div>
    </Link> 
         </div>
+        <div className="scroll-div scroll-div-2">
+ 
+<h1 className='panchkarma'>What is PanchKarma?</h1>
+<p>Panchakarma treatment aims to liberate the body from toxins and residues that have accumulated over time. At the heart of a Panchakarma treatment are the five cleansing procedures. These are called Vaman, Virechan, Basti, Nasya, and Raktamokshana.</p>
+        </div>
+
+        </>
       )}
 
     

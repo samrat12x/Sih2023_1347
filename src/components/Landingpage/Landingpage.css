@@ -4,6 +4,7 @@
     border-color: black;
     /* border-width: 1px; */
     padding: 7%;
+    
  
 }
 
@@ -15,4 +16,8 @@
     background-color: #FDE9CE;
     background-image: linear-gradient(#c1b8a7, #FDE9CE);
 
+}
+
+.landing-page-bg{
+    
 }
