@@ -1,9 +1,11 @@
 .sc-body-model-svg{
 
     color: #F8C4B4;
+   
  height: 350px;
  
  }
  .sc-body-model-svg__path:hover{
      color: #FF8787;
  }
+

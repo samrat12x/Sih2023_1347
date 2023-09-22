@@ -1,10 +1,26 @@
-import React from 'react'
+import React , {useState} from 'react'
 import Searchbar from './Searchbar'
-import SVGComponent from './SVGComponent'
+import MaleFront from './MaleFront'
+
 import { Link } from 'react-router-dom'
 import './Symptoms.css'
+import './svgcomponent.css'
+import {FaArrowsRotate} from 'react-icons/fa6'
+import MaleBack from './MaleBack'
+import FemaleFront from './FemaleFrontSVG'
+import FemaleBack from './FemaleBack'
+
 export default function  Symptoms() {
-  
+const[gender,setGender]=useState('female');
+
+
+  const[isFront, setIsFront]=useState(true);
+
+function handleRotateBtnClick()
+{
+setIsFront(d =>!d);
+}
+
   const ApiCall=()=>{
     console.log("write api call logic here");
   }
@@ -17,8 +33,13 @@ export default function  Symptoms() {
 <h3 style={{marginTop:'10px', marginBottom:'10px', fontWeight:'600'}}>Add as many symptoms you can to obtain
 most accurate results.</h3>
 <Searchbar/>
-</div>        
-<SVGComponent/>
+</div>   
+<div>
+{ gender=='male'? isFront? <MaleFront/>:<MaleBack/> : isFront? <FemaleFront/>:<FemaleBack/>  }
+
+{/* rotate btn */}
+<button onClick={handleRotateBtnClick} > <FaArrowsRotate></FaArrowsRotate>Rotate</button>
+</div>     
 </div>
 
 <div className='btn-grp'>
