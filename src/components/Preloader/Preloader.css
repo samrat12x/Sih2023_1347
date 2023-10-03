@@ -13,3 +13,7 @@
  justify-content: center;
  color: rgb(24, 34, 42); 
 }
+
+.hindi-text{
+  font-family: 'Tiro Devanagari Hindi', serif;
+}

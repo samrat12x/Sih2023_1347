@@ -8,9 +8,9 @@ export function VerticalNavbar() {
   return (
     <div className="vertical-navbar">
       <ul>
-        <li className={location.pathname === '/section1' ? 'active' : ''}>Form</li>
-        <li className={location.pathname === '/section2' ? 'active' : ''}>Symptoms</li>
-        <li className={location.pathname === '/section3' ? 'active' : ''}>Results</li>
+        <li className={location.pathname === '/PatientDashboard/' ? 'active' : ''}>Form</li>
+        <li className={location.pathname === '/PatientDashboard/Symptoms' ? 'active' : ''}>Symptoms</li>
+        <li className={location.pathname === '/PatientDashboard/Result' ? 'active' : ''}>Results</li>
       </ul>
     </div>
   );
